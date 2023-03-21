@@ -1,38 +1,334 @@
-.App {
+
+
+.landing-page{
+  font-family: 'Tilt Neon', cursive;
+  width: 100%;
+  height: 1000px;
+}
+
+
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 750px; /* set a fixed height */
+  background-image: url('./components/landingpage.png');
+  background-repeat: no-repeat;
+  
+ 
+}
+
+
+.box{
+  position: absolute;
+  height: 299px;
+  width: 749.4299926757812px;
+  left: 350px;
+  top: 212px;
+  border-radius: 28px;
+  align-content: center;
+  
+
+}
+
+
+.title {
+
+ position: absolute;
+ top:-4px;
+ left:92px;
+ color: white;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0px;
   text-align: center;
+  
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.signup{
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Tilt Neon', cursive;
+  position: absolute;
+  height: 30px;
+width: 75px;
+left: 287px;
+top: 168px;
+border-radius: 15px;
+border:none;
+padding: 1px 1px 0px 10px;
+background: rgb(255, 255, 255);
+color: #282525;
+text-indent: -10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.signup:hover {
+  background: rgba(255, 102, 51, 1);
+  font-family: 'Tilt Neon', cursive;
+  color:#ffffff;
+}
+
+
+.login{
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Tilt Neon', cursive;
+  position: absolute;
+  height: 30px;
+width: 75px;
+left: 375px;
+top: 168px;
+border-radius: 15px;
+border: none;
+padding: 5px -2px 9px 15px;
+background: rgba(255, 102, 51, 1);
+color: white;
+}
+
+.login:hover {
+  background-color: #ffffff;
+  font-family: 'Tilt Neon', cursive;
+  color:#282525;
+}
+
+
+.email{
+position: absolute;
+color:white;
+left:545px;
+top:255px;
+font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  text-indent: 1px;
+  text-decoration: none;
+}
+
+
+.name{
+  position: absolute;
+  color:white;
+  left:30px;
+  top:244px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  
   }
+
+  .phone{
+    position: absolute;
+    text-decoration: none; 
+    color:white;
+    left:330px;
+    top:255px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+  
+
+    }
+
+
+
+
+
+
+
+
+.header {
+ position: absolute;
+  left: 630px;
+  top: 87.376220703125px;
+  border-radius: 0px;
+font-size: 20px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: #fff;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.header ul {
   display: flex;
-  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  margin-right: 4rem;
+  
+}
+
+.header form {
+  display: inline;
+}
+
+
+.listing a{
+height: 25px;
+width: 50px;
+left: -84px;
+top: -2px;
+border-radius: nullpx;
+color: white;
+text-decoration: none;
+}
+
+
+
+
+.aboutus a{
+  height: 25px;
+width: 60px;
+left: 189px;
+top: 0px;
+border-radius: nullpx;
+color: white;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+
+
+.contactus a{
+  width: 64px;
+  height: 25px;
+  left: 89px;
+  top: 0px;
+  white-space: nowrap;
+color: white;
+text-decoration: none;
+}
+
+
+.header form input[type="text"] {
+  padding:6px;
+  border-color: rgb(255, 255, 255);
+  background-color: #f2f2f2;
+  border-radius: 60px;
+  font-size: 1rem;
+  width: 50%;
+  position: absolute;
+  top:0px;
+  left:450px;
+  outline:#fff;
+  text-indent: 15px;
+  border: none;
+}
+
+.header form button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #2e86de;
+  color: #fff;
+  border-radius: 60px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.header form button[type="submit"]:hover {
+  background-color: #1e6ac9;
+}
+
+.search-btn {
+  color: #150c61;
+  border: none;
+  background:none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 655px;
+  top: 6px;
+  transform: scaleX(-1);
 }
 
-.App-link {
-  color: #61dafb;
+.search-btn:hover {
+  background-color: #1e6ac9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counters {
+  display: inline-block;
+  margin: 13%;
+  margin-left: 200px;
+  word-spacing: 200px;
+position: absolute;
+background-color:rgba(158, 154, 138, 0.32);
+top:600px;
+width: 100%;
+margin-left: auto;
+  
 }
+
+
+
+
+.count-container {
+  display: flexbox;
+  flex-direction: column;
+  max-width: 100%;
+  color:rgba(73, 40, 40, 1);
+
+
+}
+
+.count {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+  
+.counter1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    margin-right: 400px;
+    padding-left: 115px;
+  }
+  
+  .counter2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    margin-right: 400px;
+  }
+
+  .counter3 {
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    margin-right: 50px;
+  }
+
+
+  .plus {
+    font-size: 1.5rem;
+  }
+  
+  .text {
+    font-size: 18px;
+    user-select: contain;
+    background-position: 100%;
+    color:rgba(73, 40, 40, 1);
+    ;
+
+  }
+  
